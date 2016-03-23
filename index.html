@@ -15,6 +15,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
     <style>
       body {
         padding: 2rem;
@@ -22,7 +23,179 @@
     </style>
   </head>
   <body>
-    <h1>Replace carousel images</h1>
-    <input name="password" type="password" autocomplete="off" placeholder="Password" />
+    <h1>Dubden carousel images</h1>
+    <br />
+    <span>Password&nbsp;<span>
+    <input id="password" name="password" type="password" autocomplete="off" placeholder="Password" />
+    <div style="height: 3rem"></div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div id="carousel-1-container" class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Carousel Image 1</h3>
+          </div>
+          <div class="panel-body">
+            <div id="error-block-1" style="display: none">
+              <h5> An error occurred, please refresh the page and try again or contact @sanjaypojo </h5>
+            </div>
+            <div class="thumbnail">
+              <img id="thumbnail-carousel-1" src="http://localhost:3000/dubden/carousel-1.png" />
+            </div>
+          </div>
+          <div class="panel-footer clearfix">
+            <div class="col-xs-8">
+              <input id="carousel-upload-1" type="file" name="image" accept=".png" />
+            </div>
+            <div class="col-xs-4">
+              <button class="btn btn-primary" type="submit" onclick="uploadImage(1)">Replace image</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div id="carousel-2-container" class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Carousel Image 2</h3>
+          </div>
+          <div class="panel-body">
+            <div id="error-block-2" style="display: none">
+              <h5> An error occurred, please refresh the page and try again or contact @sanjaypojo </h5>
+            </div>
+            <div class="thumbnail">
+              <img id="thumbnail-carousel-2" src="http://localhost:3000/dubden/carousel-2.png" />
+            </div>
+          </div>
+          <div class="panel-footer clearfix">
+            <div class="col-xs-8">
+              <input id="carousel-upload-2" type="file" name="image" accept=".png" />
+            </div>
+            <div class="col-xs-4">
+              <button class="btn btn-primary" type="submit" onclick="uploadImage(2)">Replace image</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div id="carousel-3-container" class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Carousel Image 3</h3>
+          </div>
+          <div class="panel-body">
+            <div id="error-block-3" style="display: none">
+              <h5> An error occurred, please refresh the page and try again or contact @sanjaypojo </h5>
+            </div>
+            <div class="thumbnail">
+              <img id="thumbnail-carousel-3" src="http://localhost:3000/dubden/carousel-3.png" />
+            </div>
+          </div>
+          <div class="panel-footer clearfix">
+            <div class="col-xs-8">
+              <input id="carousel-upload-3" type="file" name="image" accept=".png" />
+            </div>
+            <div class="col-xs-4">
+              <button class="btn btn-primary" type="submit" onclick="uploadImage(3)">Replace image</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div id="carousel-4-container" class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Carousel Image 4</h3>
+          </div>
+          <div class="panel-body">
+            <div id="error-block-4" style="display: none">
+              <h5> An error occurred, please refresh the page and try again or contact @sanjaypojo </h5>
+            </div>
+            <div class="thumbnail">
+              <img id="thumbnail-carousel-4" src="http://localhost:3000/dubden/carousel-4.png" />
+            </div>
+          </div>
+          <div class="panel-footer clearfix">
+            <div class="col-xs-8">
+              <input id="carousel-upload-4" type="file" name="image" accept=".png" />
+            </div>
+            <div class="col-xs-4">
+              <button class="btn btn-primary" type="submit" onclick="uploadImage(4)">Replace image</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div id="carousel-5-container" class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Carousel Image 5</h3>
+          </div>
+          <div class="panel-body">
+            <div id="error-block-5" style="display: none">
+              <h5> An error occurred, please refresh the page and try again or contact @sanjaypojo </h5>
+            </div>
+            <div class="thumbnail">
+              <img id="thumbnail-carousel-5" src="http://localhost:3000/dubden/carousel-5.png" />
+            </div>
+          </div>
+          <div class="panel-footer clearfix">
+            <div class="col-xs-8">
+              <input id="carousel-upload-5" type="file" name="image" accept=".png" />
+            </div>
+            <div class="col-xs-4">
+              <button class="btn btn-primary" type="submit" onclick="uploadImage(5)">Replace image</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div id="carousel-6-container" class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Carousel Image 6</h3>
+          </div>
+          <div class="panel-body">
+            <div id="error-block-6" style="display: none">
+              <h5> An error occurred, please refresh the page and try again or contact @sanjaypojo </h5>
+            </div>
+            <div class="thumbnail">
+              <img id="thumbnail-carousel-6" src="http://localhost:3000/dubden/carousel-6.png" />
+            </div>
+          </div>
+          <div class="panel-footer clearfix">
+            <div class="col-xs-8">
+              <input id="carousel-upload-6" type="file" name="image" accept=".png" />
+            </div>
+            <div class="col-xs-4">
+              <button class="btn btn-primary" type="submit" onclick="uploadImage(6)">Replace image</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 3rem"></div>
+    <script>
+      var uploadImage = function(carouselId) {
+        var request = new XMLHttpRequest();
+        var formData = new FormData();
+        var password = document.getElementById("password").value;
+        var fileInput = document.getElementById("carousel-upload-" + carouselId);
+        var imageFile = fileInput.files[0];
+        if (imageFile) {
+          formData.append("password", password);
+          formData.append("image", imageFile)
+          request.open("POST", "http://localhost:3000/api/dubden-uploads/reykjavik/carousel-" + carouselId, true);
+          request.send(formData);
+          request.onerror = function() {
+            var errorBlock = document.getElementById("error-block-" + carouselId).style.display = "block";
+          }
+          request.onload = function() {
+            var thumbnail = document.getElementById("thumbnail-carousel-" + carouselId);
+            var randomString = Math.random().toString(36).substring(7);
+            thumbnail.src = "http://localhost:3000/dubden/carousel-1.png?uncache=" + randomString
+          }
+        }
+        return false;
+      }
+    </script>
   </body>
 </html>
