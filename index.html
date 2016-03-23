@@ -191,7 +191,7 @@
           request.onload = function() {
             var thumbnail = document.getElementById("thumbnail-carousel-" + carouselId);
             var randomString = Math.random().toString(36).substring(7);
-            thumbnail.src = "http://sanjaypojo.com/dubden/carousel-1.png?uncache=" + randomString
+            thumbnail.src = "http://sanjaypojo.com/dubden/carousel-" + carouselId + ".png?uncache=" + randomString
           }
         }
         return false;
